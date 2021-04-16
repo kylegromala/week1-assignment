@@ -1,15 +1,13 @@
 // Import HTMLElement here
-import { default as HTMLElement } from './HTMLElement.js';
+import HTMLElement from './HTMLElement.js';
 
 // Define class here
 class DivElement extends HTMLElement {
-    constructor(content) {
-        super(content);
-    };
-
-    render() {
-        console.log()
-    }
+  constructor(content) {
+    super(content);
+    this.content = content;
+    this.tag = 'div';
+  }
 }
 
 const UofW = new DivElement('University of Washington');
@@ -17,4 +15,4 @@ UofW.render();
 
 // Export class here
 
-export default class { DivElement };
+export default DivElement;
